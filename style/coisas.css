@@ -3,59 +3,105 @@
 }
 #garf-1{
     width: 40%;
+    min-width: 455px;
 }
 #garf-2{
     width: 30%;
+    min-width: 350px;
 }
 #garf-3{
     width: 40%;
+    min-width: 455px;
+}
+
+.nav-jogos{
+    width: 100%;
+    text-wrap: no-wrap;
+
+}
+.nav-jogos > h4{
+    background-color: rgba(248, 248, 248, 0);
+    color: rgb(165, 120, 206);
+    width: 100%;
+    text-align: center;
+    padding-top:1%;
+    border-top: 5px dotted rgba(37, 0, 97);
+
+}
+.nav-jogos > h4 > a{
+    white-space: nowrap;
 }
 
 .bloco-j{
     background-color: rgba(164, 130, 219, 0.76);
+}
+.bloco-j > p{
+    padding: 0 3% 0 3%;
 }
 .jogos{
     border: 5px double rgba(28, 0, 73, 0.678);
 }
 #img-sotc{
     width: 80%;
+    min-width: 400px;
     display: block;
     margin: 0 auto;      
 }
 #img-rdr2{
     width: 40%;
+    min-width: 400px;
     display: block;
     margin: 0 auto;      
 }
 #img-re4r{
     width: 35%;
+    min-width: 350px;
     display: block;
     margin: 0 auto;   
+}
+
+.nav-artistas{
+    width: 100%;
+    text-wrap: no-wrap;
+
+}
+.nav-artistas > h4{
+    background-color: rgba(248, 248, 248, 0);
+    color: rgb(165, 120, 206);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1%;
+    border-bottom: 5px dotted rgba(37, 0, 97);
+}
+.nav-artistas > h4 > a{
+    white-space: nowrap;
 }
 
 .bloco-a{
     background-color: rgba(28, 0, 73, 0.678);
 }
+.bloco-a > p{
+    padding: 0 3% 0 3%;
+}
 .artistas{
     border: 5px double rgb(164, 130, 219);
 }
 
-figcaption{
-    text-align: center;
-}
-
 #img-aic{
     width: 100%;
+    min-width: 350px;
     display: block;
     margin: 0 auto;
 }
 #img-soad{
     width: 60%;
+    min-width: 400px;
     display: block;
     margin: 0 auto;
 }
 #img-lp{
     width: 65%;
+    min-width: 400px;
     display: block;
     margin: 0 auto;    
 }
@@ -93,14 +139,60 @@ figcaption{
     color: rgb(218, 194, 255);
 }
 
-#img-refs{
-    max-width: 25%;
-    min-width: 20%;
-}
-
 #voltar-link{
     color: rgb(218, 194, 255);
 }
 #voltar-link:hover{
     color: rgb(22, 0, 56);
+}
+
+#p-refs{
+    text-align: left;
+    padding: 0%;
+    text-indent: 0%;
+}
+
+@media (max-width:600px) {
+
+    #garf-1{
+        width: 100%;
+        min-width: 0px;
+    }
+    #garf-2{
+        width: 100%;
+        min-width:0px;
+    }
+    #garf-3{
+        width: 100%;
+        min-width: 0px;
+    }
+
+
+    #img-sotc{
+        width: 100%;
+        min-width: 0px;     
+    }
+    #img-rdr2{
+        width: 100%;
+        min-width: 0px;     
+    }
+    #img-re4r{
+        width: 100%;
+        min-width: 0px;  
+    }
+
+
+    #img-aic{
+        width: 100%;
+        min-width: 0px;
+    }
+    #img-soad{
+        width: 100%;
+        min-width: 0px;
+    }
+    #img-lp{
+        width: 100%;
+        min-width: 0px;  
+    }
+
 }
