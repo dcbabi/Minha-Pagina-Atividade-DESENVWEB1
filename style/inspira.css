@@ -6,8 +6,8 @@
     border: 5px double rgba(28, 0, 73, 0.678);
     background-color: rgb(218, 194, 255);
     padding: 1% 1%;
-    max-width: 30%;
-    min-width: 15%;
+    width: 30%;
+    min-width: 350px;
     float: inline-start;
 }
 
@@ -18,10 +18,12 @@
 
 #img1-head{
     width: 10.38%;
+    min-width: 180px;
     align-self: flex-start;
 }
 #img2-head{
     width: 15%;
+    min-width: 260px;
     align-self: flex-end;
 }
 
@@ -35,11 +37,12 @@
 
 .paragrafo{
     color: rgb(218, 194, 255);
+    padding: 3%;
 }
 
-#img-refs{
-    max-width: 25%;
-    min-width: 20%;
+pre{
+    width: 100%;
+    text-wrap: wrap;
 }
 
 #voltar-link{
@@ -47,4 +50,22 @@
 }
 #voltar-link:hover{
     color: rgb(22, 0, 56);
+}
+
+@media (max-width:600px) {
+
+    #serj{
+        width: 100%;
+        min-width: 0px;
+    }
+
+    #img1-head{
+        width: 34.6%;
+        min-width: 0px;
+    }
+    #img2-head{
+        width: 50%;
+        min-width: 0px;
+    }
+
 }
