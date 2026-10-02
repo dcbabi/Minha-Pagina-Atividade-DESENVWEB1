@@ -1,10 +1,14 @@
 .garfield{
     border: 2px solid rgba(37, 0, 97);
 }
+#img-head{
+    width: 18%;
+}
 
 .v-img{
     border: 3px groove rgb(218, 194, 255);
     opacity: 0.7;
+    width: 18%;
 }
 .v-img:hover{
     opacity: 1;
