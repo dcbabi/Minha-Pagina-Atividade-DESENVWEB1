@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+
+html{
+    background-color: #fff5eb;
+} /* 255, 249, 243 */
+
+/* *  flexbox 'gerais'  * */
+.flexbox-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexbox-column{
+    display: flex;
+    flex-direction: column;
+}
+/* * * * * * * * * * * * */
+
+/******************************************************/
+/* seção header DESKTOP utilizando flexbox-row */
+h1{
+    text-indent: 3%;
+    font-size: 2.5vw;
+    font-family: 'Sail', sans-serif;
+    width: 100%;
+    color: rgb(255, 242, 168);
+}
+.header > .daisy-logo{
+    align-self: center;
+    padding-left: 3%;
+    padding-right: 1%;
+    width: 3.5%;
+}
+.header{
+    align-items: flex-start;
+    border-bottom: 8px groove rgba(117, 168, 102, 0.295);
+    background-color: rgb(75, 110, 62);
+    width: 100%;
+}
+.header > img{
+    width: 1.5vw;
+}
+.header > .btn-pesquisa{
+    align-self: center;
+    text-align: end;
+    border: 3px solid rgb(21, 66, 21);
+    background-color: rgba(255, 248, 241, 0.76);
+    border-radius: 5vw;
+    padding: 0.4% 1.6% 0.4% 30%;
+    margin-right: 3%;
+}
+.header > .btn-livros{
+    align-self: center;
+    font-size: 20px;
+    border: 3px solid rgb(255, 242, 168);
+    background-color: rgba(21, 66, 21, 0.616);
+    border-radius: 1vw;  
+    padding: 0.7% 0.8% 0.5% 0.8%;
+    margin-right: 1%;  
+}
+.header > .btn-livros:hover{
+    border: 3px solid rgb(21, 66, 21);
+    background-color: rgb(11, 36, 11);
+}
+#img-livros{
+    width: 1.5%;
+}
+.header > .btn-planos{
+    align-self: center;
+    font-size: 20px;
+    border: 3px solid rgb(255, 242, 168);
+    background-color: rgba(21, 66, 21, 0.616);
+    border-radius: 1vw;  
+    padding: 0.7% 0.8% 0.5% 0.8%;
+    margin-right: 1%;  
+}
+.header > .btn-planos:hover{
+    border: 3px solid rgb(21, 66, 21);
+    background-color: rgb(11, 36, 11);
+}
+#img-planos{
+    width: 1.5%;
+}
+.header > .btn-login{
+    align-self: center;
+    font-size: 20px;
+    border: 3px solid rgb(255, 242, 168);
+    background-color: rgba(21, 66, 21, 0.616);
+    border-radius: 1vw;  
+    padding: 0.5% 0.8% 0.5% 0.8%;
+    margin-right: 3%;
+}
+.header > .btn-login:hover{
+    border: 3px solid rgb(21, 66, 21);
+    background-color: rgb(11, 36, 11);
+}
+#img-login{
+    width: 2%;
+}
+.assinatura-flow{
+    justify-content: flex-start;
+    margin-top: 0px;
+    background-color: rgba(177, 168, 119, 0.76);
+    color: rgb(41, 10, 8);
+    font-family: 'Basic', sans-serif;
+    font-size: 0.8vw;
+    font-weight: bold;
+    width: 100%;
+}
+.anuncio-right {
+    padding-left: 25%;
+}
+/******************************************************/
+/* adição à flexbox-row para que seções */
+/* aside e main fiquem lado a lado*/
+.main-all{
+    width: 100%;
+}
+
+/******************************************************/
+/* seção BARRA LATERAL de opções à esquerda */
+/* usando flexbox-column */
+h2{
+    color: rgb(41, 10, 8);
+    text-align: center;
+    font-family: 'Rationale', sans-serif;
+    font-weight: bold;
+}
+aside{ /* fixa elemento aside em 20% do width da linha*/
+    flex: 0 0 20%;
+
+}
+.barra-esquerda{
+    width: 100%;
+}
+.barra-esquerda > h2{
+    border: 2px solid rgb(148, 126, 0);
+    border-top: none;
+    border-bottom: none;
+    background-color: rgba(141, 134, 95, 0.863);
+    margin: 0%;
+    padding: 8% 5%;
+    font-size: 1.4vw;
+}
+.barra-esquerda > p {
+    color: rgb(41, 10, 8);
+    font-family: 'Basic', sans-serif;
+    font-size: 1.2vw;
+    text-indent: 3%;
+    border: 1px solid rgb(105, 90, 1);
+    background-color: rgba(141, 134, 95, 0.301);
+    padding: 4% 0%;
+    margin: 0;
+    margin-top: -1px;
+}
+.barra-esquerda > p:hover{
+    background-color: rgba(78, 75, 53, 0.301);
+}
+/******************************************************************/
+/* seção principal com LIVROS E INFORMAÇÕES */
+main{
+    width: 100%;
+    padding-top: 1%;
+}
+.audiobooks{
+    justify-content: space-around;
+    display: flex;
+}
+.livro{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.capa{
+    width: 83%;
+    padding: 3%;
+    aspect-ratio: 2 / 3;  /*****/    
+    object-fit: cover; /********/
+    background-color: rgba(61, 88, 52, 0.295);
+    border: 3px outset rgb(255, 242, 168, 0.452);
+}
+
+.legenda-livros{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.legenda-livros > .titulo{
+    font-family: 'Rationale', sans-serif;
+    font-size: 1.5vw;
+    line-height: 80%;
+    margin-bottom: 8%;
+}
+.legenda-livros > p {
+    font-family: 'Basic', sans-serif;
+    font-size: 0.7vw;
+    text-wrap: wrap;
+    line-height: 0%;
+}
+.avaliacao-audiobook{
+    font-weight: bold;
+    color: rgb(165, 126, 0);
+}
+.review{
+    display: none;
+}
+.plano-assinatura{
+    width: 85%;
+    padding: 5% 2%;
+    align-self: center;
+    border: 5px outset rgb(75, 110, 62);
+    background-color: rgb(255, 247, 201);
+    color:rgb(21, 66, 21);
+    font-weight: bold;
+}
+.plano-assinatura:hover{
+    background-color: rgb(21, 66, 21);
+    color:rgb(255, 247, 201);    
+}
+
+main > .livro-nao-encontrado{
+    background-color: rgb(117, 168, 102, 0.295);
+    text-align: center;
+    font-size: 1vw;
+    font-family: 'Basic', sans-serif;
+    font-weight: bolder;
+    color: rgba(78, 71, 27, 0.692);
+    width: 100%;
+    padding: 1% 0%;
+}
+
+.livro-nao-encontrado > a{
+    color: rgb(21, 66, 21);
+    font-size: 1vw;
+}
+.livro-nao-encontrado > a:hover{
+    color: rgb(0, 0, 0);
+}
+
+/******************************************************/
+/* seção de FOOTER usando flexbox-row*/
+
+footer{
+    background-color: rgb(255, 242, 168);
+    padding: 1%;
+    margin-top: none;
+}
+footer > h4{
+    text-align: center;
+    font-family: 'Basic', sans-serif;
+    color:rgb(21, 66, 21);
+    margin: -10px;
+    font-size: 1vw;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*************************************************************************/
+/* MEDIA QUERY PARA DESKTOP MEDIANO 1 */
+@media(max-width: 750px){
+
+    h1{
+        font-size: 3vw;
+    }    
+
+    .header > img{
+        width: 3vw;
+    }
+    .header > .btn-livros{
+        padding: 0.5%;
+        margin-right: 1%;  
+    }
+    #img-livros{
+        width: 3%;
+    }
+    .header > .btn-planos{ 
+        padding: 0.5%;
+        margin-right: 1%;  
+    }
+    #img-planos{
+        width: 3%;
+    }
+    .header > .btn-login{ 
+        padding: 0.5%;
+        margin-right: 3%;
+    }
+    #img-login{
+        width: 3.8%;
+    }
+    .assinatura-flow{
+        font-size: 1.4vw;
+        font-weight: bold;
+        width: 100%;
+    }
+    .anuncio-right {
+        padding-left: 25%;
+    }
+
+/******************************************************/
+    .main-all{
+        width: 100%;
+    }
+
+    aside{ /* fixa elemento aside em 20% do width da linha*/
+        flex: 0 0 20%;
+    }
+    .barra-esquerda > h2{
+        font-size: 2.5vw;
+    }
+    .barra-esquerda > p {
+        font-size: 1.8vw;
+    }
+
+/******************************************************/
+
+    .livro{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .capa{
+        width: 75%;
+    }
+    .legenda-livros > .titulo{
+        font-size: 2.3vw;
+        line-height: 80%;
+        margin-bottom: 8%;
+    }
+    .legenda-livros > p {
+        font-size: 1.3vw;
+
+    }
+    .avaliacao-audiobook{
+        font-weight: bold;
+        color: rgb(165, 126, 0);
+    }
+    .plano-assinatura{
+        border: 2px outset rgb(75, 110, 62);
+    }
+
+    main > .livro-nao-encontrado{
+        font-size: 1.6vw;
+    }
+
+    .livro-nao-encontrado > a{
+        font-size: 1.6vw;
+    }
+
+/******************************************************/   
+
+    footer > h4{
+        font-size: 1.6vw;
+    }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*************************************************************************/
+/* MEDIA QUERY PARA DESKTOP MEDIANO 2*/
+@media(max-width: 1200px){
+
+    h1{
+        font-size: 3vw;
+    }    
+
+    .header > img{
+        width: 3vw;
+    }
+    .header > .btn-livros{
+        padding: 0.5%;
+        margin-right: 1%;  
+    }
+    #img-livros{
+        width: 3%;
+    }
+    .header > .btn-planos{ 
+        padding: 0.5%;
+        margin-right: 1%;  
+    }
+    #img-planos{
+        width: 3%;
+    }
+    .header > .btn-login{ 
+        padding: 0.5%;
+        margin-right: 3%;
+    }
+    #img-login{
+        width: 3.8%;
+    }
+    .assinatura-flow{
+        font-size: 1.4vw;
+        font-weight: bold;
+        width: 100%;
+    }
+    .anuncio-right {
+        padding-left: 25%;
+    }
+
+/******************************************************/
+    .main-all{
+        width: 100%;
+    }
+
+    aside{ /* fixa elemento aside em 20% do width da linha*/
+        flex: 0 0 20%;
+    }
+    .barra-esquerda > h2{
+        font-size: 2.5vw;
+    }
+    .barra-esquerda > p {
+        font-size: 1.8vw;
+    }
+
+/******************************************************/
+
+    .livro{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .capa{
+        width: 75%;
+    }
+    .legenda-livros > .titulo{
+        font-size: 2.3vw;
+        line-height: 80%;
+        margin-bottom: 8%;
+    }
+    .legenda-livros > p {
+        font-size: 1.3vw;
+
+    }
+    .avaliacao-audiobook{
+        font-weight: bold;
+        color: rgb(165, 126, 0);
+    }
+    .plano-assinatura{
+        border: 2px outset rgb(75, 110, 62);
+    }
+
+    main > .livro-nao-encontrado{
+        font-size: 1.6vw;
+    }
+
+    .livro-nao-encontrado > a{
+        font-size: 1.6vw;
+    }
+
+/******************************************************/   
+
+    footer > h4{
+        font-size: 1.6vw;
+    }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* MEDIA QUERY PARA MOBILE*/
+@media(max-width: 700px){
+        h1{
+        display: none;
+    }
+
+    .header > .daisy-logo{
+        align-self: center;
+        margin-left: 12%;
+        width: 5%
+    }
+    .header{
+        padding: 0.5%;
+        align-items: center;
+        border-bottom: 5px groove rgba(117, 168, 102, 0.452);
+        background-color: rgba(75, 110, 62, 0.712);
+        width: 99%;
+    }
+    .header > img{
+        width: 3.7vw;
+    }
+    .header > .btn-pesquisa{
+        align-self: center;
+        border: 0.3vw solid black;
+        border-radius: 1vw;
+        background-color: rgba(255, 248, 241, 0.651);
+        padding: 0.5%;
+        padding-left: 50%;
+        margin-right: 3%;
+    }
+    .header > .btn-livros{
+        align-self: center;
+        border: none;
+        border-radius: 1vw;
+        background-color: rgba(255, 248, 241, 0.76);
+        padding: 0.5%;
+        margin-right: 1%;  
+    }
+    #img-livros{
+        width: 4%;
+    }
+    .header > .btn-planos{
+        align-self: center;
+        border: none;
+        border-radius: 1vw;
+        background-color: rgba(255, 248, 241, 0.76);
+        padding: 0.65%; 
+        margin-right: 1%;  
+    }
+    #img-planos{
+        width: 3.7%;
+    }
+    .header > .btn-login{
+        align-self: center;
+        border: none;
+        border-radius: 1vw;
+        background-color: rgba(255, 248, 241, 0.76);
+        padding: 0.5%;
+        margin-right: 3%;
+    }
+    #img-login{
+        width: 4%;
+    }
+
+    .assinatura-flow{
+        flex-direction: row;
+        width: 100%;
+        font-size: 1.8vw;
+        text-wrap: wrap;
+    }
+    .anuncio-right {
+        padding-left: 10%;
+    }
+    /******************************************************/   
+    main{
+        width: 100%;
+        margin-top: 1.5%;
+    }
+    .main-all {
+        flex-direction: column;
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        min-width: 0;
+    }
+    .barra-esquerda{
+        flex-direction: row;
+        width: 100%;
+        overflow: hidden;
+    }
+    .barra-esquerda > h2{
+        display: none;
+    }
+    .barra-esquerda > p {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        font-size: 1.8vw;
+        padding: 0.5%;
+        margin: 0;
+    }
+    .audiobooks{
+        flex-direction: column;
+        gap: 2vw;
+        padding: 2vw
+    }
+    .livro{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        gap: 2vw;
+    }
+    .capa{
+        width: 30%;
+        padding: 0.5%;
+        grid-column: 1;
+        background-color: rgba(61, 88, 52, 0.295);
+        border: 3px outset rgb(255, 242, 168, 0.452);
+    }
+
+    .legenda-livros{
+        width: auto;
+        text-align: left;
+        flex: 1;
+    }
+
+    .legenda-livros > .titulo{
+        font-family: 'Rationale', sans-serif;
+        font-size: 4.5vw;
+        line-height: 100%;  
+        text-align: left;  
+    }
+    .legenda-livros > p {
+        font-family: 'Basic', sans-serif;
+        line-height: 20%; 
+        font-size: 2vw;   
+    }
+    .avaliacao-audiobook{
+        font-weight: bold;
+        color: rgb(165, 126, 0);
+    }
+    .review{
+        color: rgba(0, 0, 0, 0.534);
+        font-style: italic;
+        display: block;
+    }
+
+    .plano-assinatura{
+        display: none;
+    }
+    .plano-assinatura-mobile{ 
+        width: 10%;
+        padding: 4% 15%;
+        text-wrap: wrap;
+        align-self: flex-start;
+        border: 3px rgb(255, 247, 201);
+        border-radius: 1.5vw;
+        background-color: rgba(75, 110, 62, 0.733);
+        color:rgb(255, 247, 201);    
+    }
+
+    main > .livro-nao-encontrado{
+        background-color: rgb(117, 168, 102, 0.295);
+        text-align: center;
+        font-family: 'Basic', sans-serif;
+        font-weight: bolder;
+        color: rgba(78, 71, 27, 0.692);
+        width: 100%;
+        padding: 1% 0%;
+    }
+    .livro-nao-encontrado > a{
+        color: rgb(21, 66, 21);
+    }
+
+    /******************************************************/   
+    footer{
+        background-color: rgb(255, 242, 168);
+        padding: 2%;
+        margin-top: 20%;
+    }
+    footer > h4{
+        text-align: center;
+        font-family: 'Basic', sans-serif;
+        color:rgb(21, 66, 21);
+        margin: -10px;
+    }
+}
