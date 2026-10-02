@@ -1,7 +1,9 @@
+#garf-cdd{
+    width: 20%;
+    min-width: 150px;
+}
 .garfield{
     border: 2px solid rgba(37, 0, 97);
-    max-width: 18%;
-    min-width: 15%;
 }
 
 .bloco-um{
@@ -17,6 +19,7 @@
 
 .imgs{
     width:30%;
+    min-width: 350px;
 }
 
 #voltar-link{
@@ -25,10 +28,20 @@
 #voltar-link:hover{
     color: rgb(22, 0, 56);
 }
-#img-refs{
-    max-width: 25%;
-    min-width: 20%;
-}
+
 .p-footer{
     background-color: rgb(218, 194, 255);
+}
+
+@media (max-width:600px) {
+    
+    #garf-cdd{
+    width: 50%;
+    min-width: 0px;
+    }
+
+    .imgs{
+    width: 90%;
+    min-width: 0px;
+    }
 }
