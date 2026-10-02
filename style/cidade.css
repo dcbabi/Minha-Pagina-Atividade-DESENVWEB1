@@ -1,5 +1,7 @@
 .garfield{
     border: 2px solid rgba(37, 0, 97);
+    max-width: 18%;
+    min-width: 15%;
 }
 
 .bloco-um{
@@ -13,13 +15,20 @@
     background-color: rgba(218, 194, 255, 0.87);
 }
 
+.imgs{
+    width:30%;
+}
+
 #voltar-link{
     color: rgb(218, 194, 255);
 }
 #voltar-link:hover{
     color: rgb(22, 0, 56);
 }
-
+#img-refs{
+    max-width: 25%;
+    min-width: 20%;
+}
 .p-footer{
     background-color: rgb(218, 194, 255);
 }
