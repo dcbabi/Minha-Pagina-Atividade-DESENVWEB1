@@ -1,4 +1,5 @@
-.garfield{
+
+img{
     border: 2px solid rgba(37, 0, 97);
 }
 
@@ -6,7 +7,16 @@
     margin-left: 5rem;
 }
 
+.img1{
+    width: 50%;
+}
+
+.img2-3{
+    width: 12%;
+}
+
 .blocos{
     background-color: rgba(218, 194, 255, 0.87);
     color: rgba(37, 0, 97);
+    width: auto;
 }
