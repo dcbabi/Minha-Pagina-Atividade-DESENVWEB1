@@ -3,12 +3,19 @@
 }
 #img-head{
     width: 18%;
+    min-width: 200px;
+}
+
+#break-stack{
+    display: row;
+    flex-wrap: wrap;
 }
 
 .v-img{
     border: 3px groove rgb(218, 194, 255);
     opacity: 0.7;
-    width: 18%;
+    width: 25%;
+    min-width: 135px ;
 }
 .v-img:hover{
     opacity: 1;
@@ -16,4 +23,20 @@
 
 .viagens{
     background-color: rgb(218, 194, 255);
+}
+
+@media (max-width:600px) {
+
+    #img-head{
+        width: 55%;
+        min-width: 0px;
+    }
+
+    .v-img{
+        border: 3px groove rgb(218, 194, 255);
+        opacity: 1;
+        width: 80%;
+        min-width: 0px;
+    }
+
 }
