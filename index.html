@@ -15,33 +15,40 @@
 
         <div class="nav">
             <nav>
-                <table>
-                    <tr>
-                    <td><a href="paginas/cidade.html">Cidade</a></td>
-                    <td><a href="paginas/sonho.html">Sonho</a></td>
-                    <td><a href="paginas/inspira.html">Inspiração</a></td>
-                    <td><a href="paginas/coisas.html">Favoritos</a></td>
-                    </tr>
-                </table>
+                <div class="stack">
+                    <div class="stack-item"><a href="paginas/cidade.html">Cidade</a></div>
+                    <div class="stack-item"><a href="paginas/sonho.html">Sonho</a></div>
+                    <div class="stack-item"><a href="paginas/inspira.html">Inspiração</a></div>
+                    <div class="stack-item"><a href="paginas/coisas.html">Favoritos</a></div>
+                    <div class="stack-item"><a href="atividade-infoproduto/index.html">Página Infoproduto</a></div>
+                </div>
             </nav>
         </div>
 
         <main>
             <div class="blocos">
                 <h1>★ Sobre mim</h1>
-                <figure>
-                    <img src="imgs/sobrermim.jpg" width="750"  class="garfield" alt="gato garfield tirando uma selfie">
-                    <figcaption>Fig. 1 - gato garfield tirando uma selfie </figcaption>
-                </figure>
+                <div class="imgs-flexbox">
+                    <figure>
+                            <img class="img1" src="imgs/sobrermim.jpg"  alt="gato garfield tirando uma selfie">
+                        <figcaption>Fig. 1 - gato garfield tirando uma selfie </figcaption>
+                    </figure>
+                </div>
                     <p>Me chamo Bárbara Diniz Cicuto, tenho 20 anos e me mudei para Votuporanga prar cursar o bacharelado em <strong>Sistemas de Informação pelo Instituto Federal de Ciência e Tecnologia de São Paulo.</strong></p> 
-                <img src="imgs/oi.jpg" width="250" id="id-garfield" class="garfield" alt="gato garfield acenando oi">    
+                
+                <div class="imgs-flexbox">
+                    <img class="img2-3" src="imgs/oi.jpg" id="id-garfield" class="garfield" alt="gato garfield acenando oi">    
+                </div>
             </div>
+
             <div class="blocos">
                 <h3>★ Hobbies</h3>
-                <p>Estou sempre <strong><i>ouvindo música</i></strong> na maior parte do tempo e, no meu (maior) tempo de lazer, gosto de <strong><i>jogar vídeo-game</i></strong> -- em especial jogos antigos de playstation2 --  e fazer colagens com adesivos e recortes. Também coleciono action-figures e mangás.</p>
-                <p>Apesar de não não estudar ou trabalhar com design, gosto de fazer edições e colagens em plataformas digitais como o Canva.</p>
-                <br>  
-                <img src="imgs/uau.jpg" width="250" id="id-garfield" class="garfield" alt="gato garfield acenando oi">        
+                    <p>Estou sempre <strong><i>ouvindo música</i></strong> na maior parte do tempo e, no meu (maior) tempo de lazer, gosto de <strong><i>jogar vídeo-game</i></strong> -- em especial jogos antigos de playstation2 --  e fazer colagens com adesivos e recortes. Também coleciono action-figures e mangás.</p>
+                    <p>Apesar de não não estudar ou trabalhar com design, gosto de fazer edições e colagens em plataformas digitais como o Canva.</p>
+                <br> 
+                <div class="imgs-flexbox"> 
+                    <img class="img2-3" src="imgs/uau.jpg" id="id-garfield" class="garfield" alt="gato garfield acenando oi">        
+                </div>
             </div>
 
             <div class="blocos">
@@ -53,8 +60,8 @@
         </main>
 
         <footer>
-            <img id="img-footer" src="imgs/footer.jpg" width="500" alt="imagem de rodape do gato garfield">
-            <p class="p-footer">Web Site Autoral © Barbara Diniz Cicuto/ 2026</p>
+            <img id="img-footer" src="imgs/footer.jpg" alt="imagem de rodape do gato garfield">
+            <h5 class="p-footer">Web Site Autoral © Barbara Diniz Cicuto/ 2026</h5>
         </footer>
 
     </body>
