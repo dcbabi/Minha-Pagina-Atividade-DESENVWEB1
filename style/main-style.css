@@ -3,18 +3,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
 
+
+@media (max-width:650) {
+    .nav {
+            flex-direction: column; /* transforma a navegaçao num bloco vertical stack*/
+    }
+
+    .nav a, .nav button {
+            width: 100%;           
+    }
+}
+
+
 html{
     background-color: rgb(255, 243, 228);
 }
+body{
+    margin: 1.5rem 4rem 1.5rem 4rem;
+}
 p{
     font-family: 'Saira', sans-serif;
-    text-indent: 15px;
+    text-indent: 3%;
+    padding: 0 1% 0 1%;
 }
+
 .nav{
     background-color: rgb(165, 120, 206);
     margin-right: auto;
     padding: 5px 5px;
     margin-bottom: 2rem;
+    width: auto;
+}
+
+.nav content{
+    grid-area:auto;
+}
+
+.imgs-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
 td{
@@ -34,6 +63,7 @@ h2, h3, h4{
     font-family: "Jacquarda Bastarda 9", serif;
     color: rgb(218, 194, 255);
     background-color:  rgb(79, 52, 122);
+    text-indent: 1%;
 }
 
 a{
@@ -47,6 +77,8 @@ a:hover{
 
 #img-footer{
     border: 3px dotted rgba(37, 0, 97, 0.336);
+    max-width: 60%;
+    min-width: 25%;
 }
 
 .topo{
@@ -59,8 +91,10 @@ a:hover{
 }
 
 footer{
-    margin-top: 3rem;
+    margin-top: 3rem; 
 }
+
 .p-footer{
     background-color: rgb(218, 194, 255);
+    text-align: left;
 }
