@@ -8,15 +8,35 @@ img{
 }
 
 .img1{
-    width: 50%;
+    width: 75%;
+    min-width: 350px;
+    display: block;
+    margin: 0 auto;
 }
 
 .img2-3{
     width: 12%;
+    min-width: 150px;
+    display: block;
+    margin: 0 auto;
 }
 
 .blocos{
     background-color: rgba(218, 194, 255, 0.87);
     color: rgba(37, 0, 97);
     width: auto;
+}
+
+@media (max-width:600px) {
+
+    .img1{
+        width: 100%;
+        min-width: 0px;
+    }
+
+    .img2-3{
+        width: 40%;
+        min-width: 0px;
+    }
+
 }
